@@ -16,68 +16,34 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<!-- jQuery -->
 	<script src="js/jquery-2.1.3.min.js"></script>
-	<!-- Стили прелоадера / Стили прелоадера в документе для максимально быстрой загрузки -->
-	<style>
-		#page-preloader {
-		    position: fixed;
-		    left: 0;
-		    top: 0;
-		    right: 0;
-		    bottom: 0;
-		    background: #fff;
-		    z-index: 100500;
-		}
-		#page-preloader .img-preloader {
-		    width: 100px;
-		    height: 100px;
-		    position: absolute;
-		    left: 50%;
-		    top: 50%;
-		    margin: -50px 0 0 -50px;
-		    /**/
-			/* Размер и позиционирование */
-		    font-size: 100px; /* 1em */
-		    width: 1em;
-		    height: 1em;
-			/* Styles */
-			border-radius: 50%;
-			background: #FF4F72;
-			background:
-				-webkit-linear-gradient(#999 50%, #555 50%),
-				-webkit-linear-gradient(#555 50%, #999 50%);
-			background:
-				-o-linear-gradient(#999 50%, #555 50%),
-				-o-linear-gradient(#555 50%, #999 50%);
-			background:
-				linear-gradient(#999 50%, #555 50%),
-				linear-gradient(#555 50%, #999 50%);
-			background-position:0 0,100% 0;
-			background-size: 50% 100%;
-			background-repeat: no-repeat;
-			box-shadow:
-			inset 0 0 0 .12em rgba(0,0,0,0.2),
-			0 0 0 .12em rgba(255,255,255,0.1);
-			-webkit-animation: rotate 2s infinite linear;
-			-o-animation: rotate 2s infinite linear;
-			animation: rotate 2s infinite linear;
-		}
-		@-webkit-keyframes rotate {
-		    from {-webkit-transform:  rotate(0);}	to {-webkit-transform: rotate(360deg);}
-		}
-	</style>
 </head>
 <body>
-<!-- Прелоадер -->
-<div id="page-preloader"><div class="img-preloader"><div class="spinner"></div></div></div>
-<script>
-	$(window).on('load', function () {
-	    var $preloader = $('#page-preloader'),
-	        $img_preloader   = $preloader.find('.img-preloader');
-	    $img_preloader.fadeOut();
-	    $preloader.delay(350).fadeOut('slow');
-	});
-</script>
-<!-- /Прелоадер -->
-<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=8Kgp-thCnEEgLMCeYhtVn54J81q_lOZ9&width=600&height=450"></script>
+	<div id="wrap">
+		<header>
+			<a href="#"><div id="logo"></div></a>
+			<!-- блок-обертка для меню -->
+			<div id="menu">
+				<nav>
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Обо мне</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<div id="info">
+			<h2 class="red">Привет Всем!</h2>
+			<h4>Приветствую на вас на своем сайте/визитке.</h4>
+			<h4>Пока это просто текст заглушка для примера.</h4>
+			<h4>В дальнейшем покажу сдесь всякие штуки.</h4>
+		</div>
+		<div class="content"></div>
+		<div class="clear"></div>
+	</div>
 </body>
 </html>
