@@ -14,12 +14,17 @@
 	<!-- Стили CSS -->
 	<link rel="stylesheet" href="styles/preloader.css">
 	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/style.css">
+	<!--<link rel="stylesheet" href="styles/style.css">-->
+	<link rel="stylesheet/less" href="styles/style.less">
 	<!-- jQuery -->
 	<script src="js/jquery-2.1.3.min.js"></script>
+	<!-- LESS.js -->
+	<script src="js/less.min.js"></script>
+	<!-- Мои скримпты -->
+	<script src="js/my_script.js"></script>
 </head>
 <body>
-	<div id="wrap">
+	<div id="page">
 		<header>
 			<a href="#"><div id="logo"></div></a>
 			<!-- блок-обертка для меню -->
@@ -27,7 +32,6 @@
 				<nav>
 					<ul>
 						<li><a href="#">Главная</a></li>
-						<li><a href="#">Обо мне</a></li>
 						<li><a href="#">Портфолио</a></li>
 						<li><a href="#">Проекты</a></li>
 						<li><a href="/my_blog/index.php" target="blank">Блог</a></li>
@@ -39,14 +43,17 @@
 		</header>
 		<div id="info">
 			<h2 class="red">Привет Всем!</h2>
-			<h4>Приветствую на вас на своем сайте/визитке/портфолио.</h4>
+			<h4>Приветствую вас на своем сайте/визитке/портфолио.</h4>
 			<h4>На данный момент я работаю над этой страничкой.</h4>
 			<h4>Пока работает только ссылка на мой блог.</h4>
 			<h4>Блог тоже самописный и продолжает развиваться. Там я выкладываю свякую всячину.</h4>
 		</div>
-		<div class="content"></div>
+		<div class="content">
+			<img src="img/chalk_1.png" width="100%" height="auto" alt="Изготовление сайтов">
+		</div>
 		<div class="clear"></div>
 	</div>
+	<div class="clear"></div>
 	<!-- Прелоадер -->
 	<div id="page-preloader"><div class="img-preloader"><div class="spinner"></div></div></div>
 	<script>
