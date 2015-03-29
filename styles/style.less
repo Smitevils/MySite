@@ -14,6 +14,15 @@
 .red {color: red;}
 .orange {color: orange;}
 .green {color: green;}
+.yellow {color: yellow;}
+.red ul li a{color: #fff;}
+.red ul li a:hover{color: red;}
+.yellow ul li a{color: #fff;}
+.yellow ul li a:hover{color: yellow;}
+.orange ul li a{color: #fff;}
+.orange ul li a:hover{color: orange;}
+.green ul li a{color: #fff;}
+.green ul li a:hover{color: green;}
 
 h2 {
 	font-size: 22px;
@@ -79,13 +88,12 @@ div#logo {
    text-decoration: none; /* убираем подчеркивание ссылки */
    display: block; /* делаем ссылки блочными */
    padding: 2px 10px; /* отступы */
-   color: #fff; /* цвет ссылок */
    font-size: 22px;
    margin: 0; padding: 0;
 }
 
 #menu ul li a:hover {
-	color: red;
+
 }
 
 div#info {
@@ -126,6 +134,56 @@ div.content {
 @media screen and (max-width: 500px) {
 	div#info {width: 98%; padding: 2%; margin: 0; text-align: center;}
 	#menu ul li a{font-size: 12px;}
+}
+
+/* @keyframe */
+
+@-webkit-keyframes manifestation {
+    0%	{ opacity: 0;}
+    50%	{ opacity: 1;}
+}
+
+@-webkit-keyframes manifestation_rotate_clockwise {
+    0%	{ opacity: 0; transform: rotate(-360deg);}
+    50%	{ opacity: 1; transform: rotate(0deg);}
+}
+
+@-webkit-keyframes manifestation_rotate_counter-clockwise {
+    0%	{ opacity: 0; transform: rotate(360deg);}
+    50%	{ opacity: 1; transform: rotate(0deg);}
+}
+
+/* -------------- */
+
+@-moz-keyframes manifestation {
+    0%	{ opacity: 0;}
+    50%	{ opacity: 1;}
+}
+
+@-moz-keyframes manifestation_rotate_clockwise {
+    0%	{ opacity: 0; transform: rotate(-360deg);}
+    50%	{ opacity: 1; transform: rotate(0deg);}
+}
+
+@-moz-keyframes manifestation_rotate_counter-clockwise {
+    0%	{ opacity: 0; transform: rotate(360deg);}
+    50%	{ opacity: 1; transform: rotate(0deg);}
+}
+
+.animate_1 {
+	-webkit-animation: manifestation 3s ease;
+	-moz-animation: manifestation 3s ease;
+	-webkit-animation: manifestation 3s ease;
+}
+.animate_2 {
+	-webkit-animation: manifestation_rotate_clockwise 1s ease;
+	-moz-animation: manifestation_rotate_clockwise 1s ease;
+	-webkit-animation: manifestation_rotate_clockwise 1s ease;
+}
+.animate_3 {
+	-webkit-animation: manifestation_rotate_counter-clockwise 1s ease;
+	-moz-animation: manifestation_rotate_counter-clockwise 1s ease;
+	-webkit-animation: manifestation_rotate_counter-clockwise 1s ease;
 }
 
 
