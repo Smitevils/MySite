@@ -12,6 +12,7 @@
 	<!-- /Прошу почаще индексировать, плиз! -->
 	<meta name="author" content="smitevils.ru">
 	<!-- Стили CSS -->
+	<link rel="stylesheet" href="styles/preloader.css">
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<!-- jQuery -->
@@ -29,7 +30,7 @@
 						<li><a href="#">Обо мне</a></li>
 						<li><a href="#">Портфолио</a></li>
 						<li><a href="#">Проекты</a></li>
-						<li><a href="#">Блог</a></li>
+						<li><a href="/my_blog/index.php" target="blank">Блог</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
@@ -38,12 +39,24 @@
 		</header>
 		<div id="info">
 			<h2 class="red">Привет Всем!</h2>
-			<h4>Приветствую на вас на своем сайте/визитке.</h4>
-			<h4>Пока это просто текст заглушка для примера.</h4>
-			<h4>В дальнейшем покажу сдесь всякие штуки.</h4>
+			<h4>Приветствую на вас на своем сайте/визитке/портфолио.</h4>
+			<h4>На данный момент я работаю над этой страничкой.</h4>
+			<h4>Пока работает только ссылка на мой блог.</h4>
+			<h4>Блог тоже самописный и продолжает развиваться. Там я выкладываю свякую всячину.</h4>
 		</div>
 		<div class="content"></div>
 		<div class="clear"></div>
 	</div>
+	<!-- Прелоадер -->
+	<div id="page-preloader"><div class="img-preloader"><div class="spinner"></div></div></div>
+	<script>
+		$(window).on('load', function () {
+		    var $preloader = $('#page-preloader'),
+		        $img_preloader   = $preloader.find('.img-preloader');
+		    $img_preloader.fadeOut();
+		    $preloader.delay(350).fadeOut('slow');
+		});
+	</script>
+	<!-- /Прелоадер -->
 </body>
 </html>
