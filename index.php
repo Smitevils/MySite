@@ -48,7 +48,61 @@
 			<h4>Блог тоже самописный и продолжает развиваться. Там я выкладываю свякую всячину.</h4>
 		</div>
 		<div class="content">
-			<img src="img/chalk_1.png" width="100%" height="auto" alt="Изготовление сайтов">
+			<!--  -->
+			<div id="home_block" class="animate_1">
+				<img src="img/chalk_1.png" width="100%" height="auto" alt="Изготовление сайтов">
+			</div>
+			<div id="portfolio_block" class="animate_4">
+				<h2 class="orange">Верстка Web страниц</h2>
+				<div class="window_wrap">
+					<a href="portfolio/websites/works/19/index.html" target="blank">
+						<div class="window">
+							<img src="img/websites/1.jpg" width="100%" height="auto" alt="web">
+						</div>
+					</a>
+				</div>
+				<div class="window_wrap">
+					<a href="portfolio/websites/works/27/index.html" target="blank">
+						<div class="window">
+							<img src="img/websites/2.jpg" width="100%" height="auto" alt="web">
+						</div>
+					</a>
+				</div>
+				<div class="window_wrap">
+					<a href="portfolio/websites/works/30/index.html" target="blank">
+						<div class="window">
+							<img src="img/websites/3.jpg" width="100%" height="auto" alt="web">
+						</div>
+					</a>
+				</div>
+				<div class="window_wrap">
+					<a href="portfolio/websites/works/13/index.php" target="blank">
+						<div class="window">
+							<img src="img/websites/4.jpg" width="100%" height="auto" alt="web">
+						</div>
+					</a>
+				</div>
+				<div class="window_wrap">
+					<a href="portfolio/websites/works/15/index.php" target="blank">
+						<div class="window">
+							<img src="img/websites/5.jpg" width="100%" height="auto" alt="web">
+						</div>
+					</a>
+				</div>
+				<div class="window_wrap">
+					<a href="portfolio/websites/works/29/index.html" target="blank">
+						<div class="window">
+							<img src="img/websites/6.jpg" width="100%" height="auto" alt="web">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div id="projects_block" class="animate_1">
+				<h2 class="orange">Проекты - Тут пока ничего</h2>
+			</div>
+			<div id="contacts_block" class="animate_1">
+				<h2 class="orange">Контакты - Пока пусто</h2>
+			</div>
 		</div>
 		<div class="clear"></div>
 	</div>
