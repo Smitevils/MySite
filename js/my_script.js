@@ -1,21 +1,21 @@
 $( document ).ready(function() {
 	/* === Скрипт смены цвета === */
-	var color = $('.red, .yellow, .green, .orange');
+	var color = $('.red, .blue, .green, .orange');
 	// При клике по ссылке #home
 	$("#home").click(function() {
-		color.removeClass("red yellow green orange").addClass("red");
+		color.removeClass("red blue green orange").addClass("red");
 	});
 	// При клике по ссылке #porfolio
 	$("#porfolio").click(function() {
-		color.removeClass("red yellow green orange").addClass("orange");
+		color.removeClass("red blue green orange").addClass("orange");
 	});
 	// При клике по ссылке #projects
 	$("#projects").click(function() {
-		color.removeClass("red yellow green orange").addClass("green");
+		color.removeClass("red blue green orange").addClass("green");
 	});
 	// При клике по ссылке #contacts
 	$("#contacts").click(function() {
-		color.removeClass("red yellow green orange").addClass("yellow");
+		color.removeClass("red blue green orange").addClass("blue");
 	});
 
 	/* === Скрипт смены текста - инфо === */
@@ -29,7 +29,7 @@ $( document ).ready(function() {
 		$('#info').html("<h2 class='green animate_2'>Проекты</h2><h4 class='animate_1'>Тут опишу свои проекты. Пока описывать некогда...</h4>");
 	});
 	$("#contacts").click(function() {
-		$('#info').html("<h2 class='yellow animate_3'>Мои контакты</h2><h4 class='animate_1'>Как со мной связаться? Да, тысяча способов. Тут и мой телефон, skype, социальный сети.</h4><h4 class='animate_1'>Можно так же и старую добрую заявочку оставить. </h4>");
+		$('#info').html("<h2 class='blue animate_3'>Мои контакты</h2><h4 class='animate_1'>Нужен сайт визитка или небольшой интернет магазин? Обращайся! А может быть немного адаптивной верстки? Тут мой телефон, skype, социальный сети.</h4><h4 class='animate_1'>Можно так же и старую добрую заявочку оставить.</h4>");
 	});
 	/* === Скрипт смены текста - Контент === */
 	$("#home").click(function() {

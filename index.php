@@ -14,8 +14,9 @@
 	<!-- Стили CSS -->
 	<link rel="stylesheet" href="styles/preloader.css">
 	<link rel="stylesheet" href="styles/normalize.css">
-	<!--<link rel="stylesheet" href="styles/style.css">-->
-	<link rel="stylesheet/less" href="styles/style.less">
+	<!-- == Стиль компилирую с из less с помощью программы koala == -->
+	<link rel="stylesheet" href="styles/style.css">
+	<!-- <link rel="stylesheet/less" href="styles/style.less"> -->
 	<!-- jQuery -->
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<!-- LESS.js -->
@@ -26,14 +27,14 @@
 <body>
 	<div id="page">
 		<header>
-			<a href="#"><div id="logo"></div></a>
+			<a href="#"><div id="logo" class="animate_0"></div></a>
 			<!-- блок-обертка для меню -->
 			<div id="menu" class="red">
 				<nav>
 					<ul>
 						<li><a id="home" href="#">Главная</a></li>
 						<li><a id="porfolio" href="#">Портфолио</a></li>
-						<li><a id="projects" href="#">Проекты</a></li>
+						<!-- <li><a id="projects" href="#">Проекты</a></li> -->
 						<li><a id="blog" href="/my_blog/index.php" target="blank">Блог</a></li>
 						<li><a id="contacts" href="#">Контакты</a></li>
 					</ul>
@@ -100,8 +101,71 @@
 			<div id="projects_block" class="animate_1">
 				<h2 class="orange">Проекты - Тут пока ничего</h2>
 			</div>
-			<div id="contacts_block" class="animate_1">
-				<h2 class="orange">Контакты - Пока пусто</h2>
+			<div id="contacts_block" class="animate_1 blue">
+				<h2 class="orange">Напиши или позвони...</h2>
+				<!-- Контейнер с контактом :) -->
+				<div class="contact_wrap">
+					<div class="contact_img">
+						<img src="img/icons/vk.png" alt="vk">
+					</div>
+					<div class="contact_text">
+						<a href="http://vk.com/smitevilsvk" target="blank">vk.com/smitevilsvk</a>
+					</div>
+				</div>
+				<!-- Контейнер с контактом :) -->
+				<div class="contact_wrap">
+					<div class="contact_img">
+						<img src="img/icons/fb.png" alt="fb">
+					</div>
+					<div class="contact_text">
+						<a href="https://www.facebook.com/SmiteVils" target="blank">facebook.com/SmiteVils</a>
+					</div>
+				</div>
+				<!-- Контейнер с контактом :) -->
+				<div class="contact_wrap">
+					<div class="contact_img">
+						<img src="img/icons/tel.png" alt="tel">
+					</div>
+					<div class="contact_text">
+						+7 (960) 472-63-24
+					</div>
+				</div>
+				<!-- Контейнер с контактом :) -->
+				<div class="contact_wrap">
+					<div class="contact_img">
+						<img src="img/icons/sc.png" alt="scype">
+					</div>
+					<div class="contact_text">
+						SmiteVils
+					</div>
+				</div>
+				<!-- Контейнер с контактом :) -->
+				<div class="contact_wrap">
+					<div class="contact_img">
+						<img src="img/icons/mail.png" alt="mail">
+					</div>
+					<div class="contact_text">
+						SmiteVils@yandex.ru
+					</div>
+				</div>
+				<div class="clear"></div>
+				<!--  -->
+				<h2 class="orange">А можешь оставь заявку, и я напишу тебе сам :)</h2>
+				<form action="mail.php" method="get">
+					<div class="form_left">
+						<input type="text" value="sfsdf" placeholder="Ваше имя:"><br>
+						<input type="text" placeholder="Ваш email:"><br>
+						
+					</div>
+					<div class="form_right">
+						<textarea placeholder="Сообщение:"></textarea>
+					</div>
+					<div class="form_left">
+						<!-- <input type="submit" class="submit"><br> -->
+						<div class="submit">Отправить</div>
+					</div>
+					<div class="clear"></div>
+				</form>
 			</div>
 		</div>
 		<div class="clear"></div>
