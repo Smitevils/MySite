@@ -56,4 +56,33 @@ $( document ).ready(function() {
 		$('#projects_block').css('display', 'none');
 		$('#contacts_block').css('display', 'block');
 	});
+	/* === Выполнить функцию AJAX при клике на элементе === */
+	$(".submit").click(function() {
+		sendAjax();
+	});
 });
+
+/* === Скрипт отправки AJAX === */
+function sendAjax()  {
+	var name = $('#name').val();
+	var email = $('#email').val();
+	var text = $('#text').val();
+	if (name == "" || email == "" || text == "") {
+		alert('Заполните все поля!');
+	} else {
+		/* Ajax */
+		$.ajax({
+			type: "POST",
+			url: "scripts/php/mail.php",
+			data: "name="+name+"&"+"email="+email+"&"+"text="+text,
+			success: function(data) {
+				/*alert(data);*/
+				alert('Письмо отправлено');
+			}
+		});
+		/* /Ajax */
+		$('#name').val("");
+		$('#email').val("");
+		$('#text').val("");
+	}
+};

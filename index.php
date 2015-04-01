@@ -18,11 +18,11 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<!-- <link rel="stylesheet/less" href="styles/style.less"> -->
 	<!-- jQuery -->
-	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="scripts/js/jquery-2.1.3.min.js"></script>
 	<!-- LESS.js -->
-	<script src="js/less.min.js"></script>
+	<script src="scripts/js/less.min.js"></script>
 	<!-- Мои скримпты -->
-	<script src="js/my_script.js"></script>
+	<script src="scripts/js/my_script.js"></script>
 </head>
 <body>
 	<div id="page">
@@ -153,12 +153,12 @@
 				<h2 class="orange">А можешь оставь заявку, и я напишу тебе сам :)</h2>
 				<form action="mail.php" method="get">
 					<div class="form_left">
-						<input type="text" value="sfsdf" placeholder="Ваше имя:"><br>
-						<input type="text" placeholder="Ваш email:"><br>
+						<input type="text" id="name" name="name" placeholder="Ваше имя:"><br>
+						<input type="text" id="email" name="email" placeholder="Ваш email:"><br>
 						
 					</div>
 					<div class="form_right">
-						<textarea placeholder="Сообщение:"></textarea>
+						<textarea name="text" id="text" placeholder="Сообщение:"></textarea>
 					</div>
 					<div class="form_left">
 						<!-- <input type="submit" class="submit"><br> -->
