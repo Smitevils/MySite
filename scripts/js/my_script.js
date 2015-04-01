@@ -68,7 +68,8 @@ function sendAjax()  {
 	var email = $('#email').val();
 	var text = $('#text').val();
 	if (name == "" || email == "" || text == "") {
-		alert('Заполните все поля!');
+		$('#popup_text').html("<div class='red'>Заполните все обязательные поля!</div>");
+		$("#popup_link").click();
 	} else {
 		/* Ajax */
 		$.ajax({
@@ -77,7 +78,8 @@ function sendAjax()  {
 			data: "name="+name+"&"+"email="+email+"&"+"text="+text,
 			success: function(data) {
 				/*alert(data);*/
-				alert('Письмо отправлено');
+				$('#popup_text').html("Сообщение успешно отправлено!");
+				$("#popup_link").click();
 			}
 		});
 		/* /Ajax */

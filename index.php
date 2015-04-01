@@ -23,6 +23,11 @@
 	<script src="scripts/js/less.min.js"></script>
 	<!-- Мои скримпты -->
 	<script src="scripts/js/my_script.js"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<!-- Мои скримпты -->
+	<script src="scripts/js/fancybox.js"></script>
 </head>
 <body>
 	<div id="page">
@@ -44,9 +49,9 @@
 		</header>
 		<div id="info">
 			<h2 class="red">Привет Всем!</h2>
-			<h4>Приветствую вас на своем сайте/ визитке/ портфолио.</h4>
-			<h4>На данный момент я работаю над этой страничкой. Пока работает только ссылка на мой блог.</h4>
-			<h4>Блог тоже самописный и продолжает развиваться. Там я выкладываю свякую всячину.</h4>
+			<h4>Приветствую вас на своем сайте - визитке - портфолио.</h4>
+			<h4>Можете посмотреть на мои работы или написать мне.</h4>
+			<h4>Есть и ссыылочка на мой персональный блог.</h4>
 		</div>
 		<div class="content">
 			<!--  -->
@@ -171,6 +176,9 @@
 		<div class="clear"></div>
 	</div>
 	<div class="clear"></div>
+	<!-- POPUP -->
+	<div id="popup" style="display: table-cell; vertical-align: middle;"><div id="popup_text"></div></div>
+	<a href="#popup" id="popup_link" class="fancybox" style="display: none;">ссылка</a>
 	<!-- Прелоадер -->
 	<div id="page-preloader"><div class="img-preloader"><div class="spinner"></div></div></div>
 	<script>
