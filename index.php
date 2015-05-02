@@ -52,7 +52,7 @@
 		</header>
 		<div id="info">
 			<h2 class="red">Привет Всем!</h2>
-			<h4>Приветствую вас на своем сайте - визитке - портфолио.</h4>
+			<h4>Приветствую вас на своем сайте.</h4>
 			<h4>Можете посмотреть на мои работы или написать мне.</h4>
 			<h4>Есть и ссыылочка на мой персональный блог.</h4>
 		</div>
@@ -114,7 +114,7 @@
 				<!-- Контейнер с контактом :) -->
 				<div class="contact_wrap">
 					<div class="contact_img">
-						<img src="img/icons/vk.png" alt="vk">
+						<img src="img/icons/circle/vk.png" alt="vk">
 					</div>
 					<div class="contact_text">
 						<a href="http://vk.com/smitevilsvk" target="blank">vk.com/smitevilsvk</a>
@@ -123,7 +123,7 @@
 				<!-- Контейнер с контактом :) -->
 				<div class="contact_wrap">
 					<div class="contact_img">
-						<img src="img/icons/fb.png" alt="fb">
+						<img src="img/icons/circle/fb.png" alt="fb">
 					</div>
 					<div class="contact_text">
 						<a href="https://www.facebook.com/SmiteVils" target="blank">facebook.com/SmiteVils</a>
@@ -132,7 +132,7 @@
 				<!-- Контейнер с контактом :) -->
 				<div class="contact_wrap">
 					<div class="contact_img">
-						<img src="img/icons/tel.png" alt="tel">
+						<img src="img/icons/circle/tel.png" alt="tel">
 					</div>
 					<div class="contact_text">
 						+7 (960) 472-63-24
@@ -141,7 +141,7 @@
 				<!-- Контейнер с контактом :) -->
 				<div class="contact_wrap">
 					<div class="contact_img">
-						<img src="img/icons/sc.png" alt="scype">
+						<img src="img/icons/circle/sc.png" alt="scype">
 					</div>
 					<div class="contact_text">
 						SmiteVils
@@ -150,7 +150,7 @@
 				<!-- Контейнер с контактом :) -->
 				<div class="contact_wrap">
 					<div class="contact_img">
-						<img src="img/icons/mail.png" alt="mail">
+						<img src="img/icons/circle/mail.png" alt="mail">
 					</div>
 					<div class="contact_text">
 						SmiteVils@yandex.ru

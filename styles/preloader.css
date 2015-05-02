@@ -5,6 +5,7 @@
     right: 0;
     bottom: 0;
     background: #000;
+    background: url(../img/binding_dark.png);
     z-index: 100500;
 }
 #page-preloader .img-preloader {
