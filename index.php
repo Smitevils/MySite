@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<!-- viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SmiteVils - Веб программист, Фрилансер и просто хороший человек.</title>
 	<meta name="description" content="Сайтик фрилансера. Куча разнообразных проектов и хобби. Здесь мое резюме и контакты.">
@@ -40,7 +43,7 @@
 						<li><a id="home" href="#">Главная</a></li>
 						<li><a id="porfolio" href="#">Портфолио</a></li>
 						<!-- <li><a id="projects" href="#">Проекты</a></li> -->
-						<li><a id="blog" href="/my_blog/index.php" target="blank">Блог</a></li>
+						<li><a id="blog" href="http://blog.smitevils.ru/" target="blank">Блог</a></li>
 						<li><a id="contacts" href="#">Контакты</a></li>
 					</ul>
 				</nav>
