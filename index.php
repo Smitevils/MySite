@@ -193,5 +193,10 @@
 		});
 	</script>
 	<!-- /Прелоадер -->
+	<!-- Yandex Metrica and Google Analytics -->
+	<?php
+		include_once("scripts/php/metrika.php");
+		include_once("scripts/php/analyticstracking.php");
+	?>
 </body>
 </html>
