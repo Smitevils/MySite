@@ -57,9 +57,9 @@
 			<h4>Есть и ссыылочка на мой персональный блог.</h4>
 		</div>
 		<div class="content">
-			<!--  -->
 			<div id="home_block" class="animate_1">
-				<img src="img/chalk_1.png" width="100%" height="auto" alt="Изготовление сайтов">
+				<!--<img src="img/chalk_1.png" width="100%" height="auto" alt="Изготовление сайтов">-->
+				<?php include_once 'img\svg\svg_slider_1.php'; ?>
 			</div>
 			<div id="portfolio_block" class="animate_4">
 				<h2 class="orange">Верстка Web страниц</h2>

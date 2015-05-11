@@ -69,10 +69,10 @@ div#logo {
 	//background: url(../img/svg/logo_w.svg) no-repeat center;
 	background: url(../img/svg/logo_hidro.svg) no-repeat center;
 	background-size: 240px 240px;
-	-webkit-transform: rotate(-20deg);
+	/*-webkit-transform: rotate(-20deg);
 	-ms-transform: rotate(-20deg);
 	-o-transform: rotate(-20deg);
-	transform: rotate(-20deg);
+	transform: rotate(-20deg);*/
 }
 #menu {
 	width: 740px;
@@ -370,6 +370,79 @@ textarea {
 	-o-animation: bounceIn 1s;
 	animation: bounceIn 1s;
 }
+
+/* ********************** */
+/* Стили для слайдера SVG */
+/* ********************** */
+
+#slider-logo {
+	opacity: 0.0;
+	-webkit-animation: sliderlogo 5s linear forwards;
+	-moz-animation: sliderlogo 5s linear forwards;
+	-o-animation: sliderlogo 5s linear forwards;
+	-ms-animation: sliderlogo 5s linear forwards;
+	animation: sliderlogo 5s linear forwards;
+}
+
+@-webkit-keyframes sliderlogo {0%{opacity: 0;} 90% {opacity: 0;} 100% {opacity: 1;}}
+@-moz-keyframes sliderlogo {0%{opacity: 0;} 90% {opacity: 0;} 100% {opacity: 1;}}
+@-o-keyframes sliderlogo {0%{opacity: 0;} 90% {opacity: 0;} 100% {opacity: 1;}}
+@-ms-keyframes sliderlogo {0%{opacity: 0;} 90% {opacity: 0;} 100% {opacity: 1;}}
+keyframes sliderlogo {0%{opacity: 0;} 90% {opacity: 0;} 100% {opacity: 1;}}
+
+
+.s1lb {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	-webkit-animation: dash 5s linear forwards;
+	-moz-animation: dash 5s linear forwards;
+}
+
+@-webkit-keyframes dash {0%{stroke-dashoffset: 1000;} 90%{opacity: 1;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+@-moz-keyframes dash {0%{stroke-dashoffset: 1000;} 90%{opacity: 1;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+@-o-keyframes dash {0%{stroke-dashoffset: 1000;} 90%{opacity: 1;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+@-ms-keyframes dash {0%{stroke-dashoffset: 1000;} 90%{opacity: 1;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+keyframes dash {0%{stroke-dashoffset: 1000;} 90%{opacity: 1;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+
+.line {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	-webkit-animation: dashtwo 20s linear forwards;
+	-moz-animation: dashtwo 20s linear forwards;
+}
+
+@-webkit-keyframes dashtwo {0%{stroke-dashoffset: 1000;} 20%{opacity: 1;} 24%{opacity: 0;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+@-moz-keyframes dashtwo {0%{stroke-dashoffset: 1000;} 20%{opacity: 1;} 24%{opacity: 0;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+@-o-keyframes dashtwo {0%{stroke-dashoffset: 1000;} 20%{opacity: 1;} 24%{opacity: 0;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+@-ms-keyframes dashtwo {0%{stroke-dashoffset: 1000;} 20%{opacity: 1;} 24%{opacity: 0;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+keyframes dashtwo {0%{stroke-dashoffset: 1000;} 20%{opacity: 1;} 24%{opacity: 0;} 100% {stroke-dashoffset: 0; opacity: 0;}}
+
+.logo-title {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	-webkit-animation: dashthree 20s linear forwards;
+	-moz-animation: dashthree 20s linear forwards;
+}
+
+@-webkit-keyframes dashthree {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+@-moz-keyframes dashthree {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+@-o-keyframes dashthree {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+@-ms-keyframes dashthree {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+keyframes dashthree {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+
+.general_letters {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	-webkit-animation: dashfour 10s linear forwards;
+	-moz-animation: dashfour 10s linear forwards;
+}
+
+@-webkit-keyframes dashfour {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+@-moz-keyframes dashfour {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+@-o-keyframes dashfour {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+@-ms-keyframes dashfour {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+keyframes dashfour {0%{stroke-dashoffset: 1000;} 100% {stroke-dashoffset: 0;}}
+
 
 
 
